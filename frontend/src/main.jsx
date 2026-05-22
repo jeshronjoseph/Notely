@@ -7,7 +7,7 @@ import {Toaster} from "react-hot-toast";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/Notely">
+    <BrowserRouter>
       <App />
       <Toaster/>
     </BrowserRouter>
