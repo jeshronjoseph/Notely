@@ -1,1 +1,1 @@
-CRUD app for note making
+CRUD app for notes
