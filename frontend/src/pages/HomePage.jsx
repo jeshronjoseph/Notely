@@ -8,7 +8,8 @@ import toast from "react-hot-toast";
 import NoteCard from "../components/NoteCard"
 import NotesNotFound from "../components/NotesNotFound"
 
-const HomePage = () => {
+const HomePage = ({theme,setTheme}) => {
+
   const [isRateLimited,setIsRateLimited] = useState(false);
   const [notes,setNotes] = useState([]);
   const [loading,setLoading] = useState(true);
@@ -37,8 +38,8 @@ const HomePage = () => {
   },[]);
 
   return(
-    <div className="coffee">
-        <Navbar/>
+    <div>
+        <Navbar theme={theme} setTheme={setTheme}/>
         {isRateLimited && <RateLimitedUI/>}
 
       <div className="bg-base-100 min-h-screen">

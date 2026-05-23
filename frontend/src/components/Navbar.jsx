@@ -1,7 +1,12 @@
 import {Link} from "react-router-dom";
 import {PlusIcon} from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({theme,setTheme}) => {
+
+    const toggleTheme = () => {
+        setTheme(theme === "cupcake" ? "forest" : "cupcake");
+    }
+
     return(
         <header className="bg-base-300 border-b border-base-content/10">            
             <div className="mx-auto max-w-6xl p-4">
@@ -13,6 +18,9 @@ const Navbar = () => {
                         <span>New Note</span>
                         </Link>
                     </div>
+                    <button className="btn btn-primary" onClick={toggleTheme}>
+                        {theme==="forest" ? "Light Mode" : "Dark mode"}
+                    </button>
                 </div>
             </div>
         </header>
