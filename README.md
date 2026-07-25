@@ -1,4 +1,3 @@
-```markdown
 # Notely
 
 A simple full-stack notes app — create, view, edit, and delete notes. Built with the MERN stack (MongoDB, Express, React, Node.js).
@@ -42,4 +41,4 @@ A simple full-stack notes app — create, view, edit, and delete notes. Built wi
 
 ## Deployment
 Backend deployed on Render, frontend served from the same build.
-```
+
