@@ -45,3 +45,4 @@ connectDB().then(() => {
     })
 })
 
+//mongodb+srv://jeshronjoseph_db_user:CALMC8vZHYVT1SiB@cluster0.dkvqdzi.mongodb.net/?appName=Cluster0
